@@ -1,7 +1,7 @@
         <div class="off-canvas-absolute position-top" id="menu-off-canvas" data-off-canvas>
           <ul class="vertical menu">
             <a href="/">HOME</a>
-            <a href="#">MANIFESTO</a>
+            <a href="/manifesto.html">MANIFESTO</a>
             <a href="#">BLOG</a>
           </ul>
           <button class="close-button" aria-label="Close menu" type="button" data-close>
