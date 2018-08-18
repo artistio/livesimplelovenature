@@ -12,7 +12,19 @@
   <body>
     <div class="off-canvas-wrapper">
       <!-- Heading which has menu and title -->
-      <div id="menu-header"></div>
+      <div id="menu-header">
+        <div class="off-canvas-absolute position-top" id="menu-off-canvas" data-off-canvas>
+          <div id="main-menu"></div>
+          <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="grid-container">
+          <div class="grid-x">
+            <div id="main-menu-icon"></div>
+          </div>
+        </div>
+      </div>
 
       <!-- Homepage Banner -->
       <div id="homepage-banner" class="off-canvas-content" data-off-canvas-content>
@@ -37,7 +49,8 @@
 
     <!-- Script to load different part of the website -->
     <script>
-      $( "#menu-header" ).load( "/resources/header.inc" );
+      $( "#main-menu" ).load( "/resources/mainmenu.inc" );
+      $( "#main-menu-icon" ).load( "/resources/hamburgermenu.inc" );
       $( "#page-footer" ).load( "/resources/footer.inc" );
     </script>
   </body>
