@@ -12,27 +12,7 @@
   <body>
     <div class="off-canvas-wrapper">
       <!-- Heading which has menu and title -->
-      <div id="menu-header">
-        <div class="off-canvas-absolute position-top" id="menu-off-canvas" data-off-canvas>
-          <ul class="vertical menu">
-            <a href="/">HOME</a>
-            <a href="#">MANIFESTO</a>
-            <a href="#">BLOG</a>
-          </ul>
-          <button class="close-button" aria-label="Close menu" type="button" data-close>
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="grid-container">
-          <div class="grid-x">
-            <svg width="50" height="25" data-toggle="menu-off-canvas">
-              <rect x="0" y="0" rx="2" ry="2" width="30" height="5" style="fill:white;" />
-              <rect x="0" y="10" rx="2" ry="2" width="30" height="5" style="fill:white;" />
-              <rect x="0" y="20" rx="2" ry="2" width="30" height="5" style="fill:white;" />
-            </svg>
-          </div>
-        </div>
-      </div>
+      <div id="menu-header"></div>
 
       <!-- Homepage Banner -->
       <div id="homepage-banner" class="off-canvas-content" data-off-canvas-content>
@@ -48,19 +28,17 @@
     </div>
 
     <!-- Footer -->
-    <div id="page-footer">
-      <div class="grid-container">
-        <div class="grid-x">
-          <div class="cell"><svg width="100%" height="10">
-              <rect x="0" y="0" rx="3" ry="5" width="100%" height="8" style="fill:black;" />
-          </svg></div>
-          <div class="cell">&copy;<a href="https://benny.id">benny.id</a>, 2018<div>
-        </div>
-      </div>
-    </div>
+    <div id="page-footer"></div>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/what-input/5.1.1/what-input.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+
+    <!-- Script to load different part of the website -->
+    <script>
+      $( "#menu-header" ).load( "/resources/header.inc" );
+      $( "#page-footer" ).load( "/resources/footer.inc" );
+    </script>
   </body>
 </html>
